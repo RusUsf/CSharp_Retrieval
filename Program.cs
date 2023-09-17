@@ -36,12 +36,45 @@
 //Console.WriteLine("\n\nUsing string.Join() method");
 //Console.WriteLine(string.Join(", ", myArrayOne));
 //Console.WriteLine(string.Join(", ",myArrayTwo));
-    
 
-// Q6: How can you define a class with a property named Age?
 
-// Q7: How do you create an object of the class Person?
+//// Q6: How can you define a class with a property named Age?
+//// Q7: How do you create an object of the class Person?
+
+//Person personOne = new Person(27);
+//Person.TheNextYearAge(personOne.Age);
+//Person.TheNextYearAge(37);
+
+//public class Person
+//{
+//    public int Age { get; set; }
+//    public Person(int age = 0)
+//    {
+//        Age = age;
+//    }
+
+//    public static void TheNextYearAge(int age = 0)
+//    {
+//        Console.WriteLine($"The next year you will be {age+1}");
+//    }
+//}
+
+
+
+
 // Q8: How do you handle exceptions using try-catch?
+
+Console.WriteLine($"enter number one:");
+var myStringOne = Console.ReadLine();
+Console.WriteLine($"enter number two:");
+var myStringTwo = Console.ReadLine();
+int myIntOne = int.Parse(myStringOne);
+int myIntTwo = int.Parse(myStringTwo);
+if (myIntOne > myIntTwo)
+    Console.WriteLine($"The nubmer {myIntOne} is greater than the number {myIntTwo}");
+if (myIntTwo > myIntOne) Console.WriteLine($"The number {myIntTwo} is greater than the  number {myIntOne}");
+else
+    Console.WriteLine($"The number {myIntOne} is equal to {myIntTwo}");
 // Q9: How do you read a line of input from the console?
 // Q10: How can you define an enumeration?
 // Q11: How can you concatenate strings?
