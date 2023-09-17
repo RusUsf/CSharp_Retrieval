@@ -61,21 +61,46 @@
 
 
 
+//// Q8: How do you handle exceptions using try-catch?
+//int myIntOne;
+//try
+//{
+//    Console.WriteLine($"Enter number one:");
+//    myIntOne = int.Parse(Console.ReadLine());
+//}
+//catch (FormatException ex)
+//{
+//    Console.WriteLine($"Error: {ex.Message}");
 
-// Q8: How do you handle exceptions using try-catch?
+//}
 
-Console.WriteLine($"enter number one:");
-var myStringOne = Console.ReadLine();
-Console.WriteLine($"enter number two:");
-var myStringTwo = Console.ReadLine();
-int myIntOne = int.Parse(myStringOne);
-int myIntTwo = int.Parse(myStringTwo);
-if (myIntOne > myIntTwo)
-    Console.WriteLine($"The nubmer {myIntOne} is greater than the number {myIntTwo}");
-if (myIntTwo > myIntOne) Console.WriteLine($"The number {myIntTwo} is greater than the  number {myIntOne}");
-else
-    Console.WriteLine($"The number {myIntOne} is equal to {myIntTwo}");
-// Q9: How do you read a line of input from the console?
+
+//// Q9: How do you read a line of input from the console?
+//Console.WriteLine($"enter number one:");
+//string myStringOne = Console.ReadLine();
+//int myIntOne;
+//while (!int.TryParse(myStringOne, out myIntOne))
+//{
+//    Console.WriteLine("Invalid input. Please enter an integer for number one:");
+//    myStringOne = Console.ReadLine();
+//}
+
+//Console.WriteLine($"enter number two:");
+//string myStringTwo = Console.ReadLine();
+//int myIntTwo;
+//while (!int.TryParse(myStringTwo, out myIntTwo))
+//{
+//    Console.WriteLine("Invalid input. Please enter an integer for number two:");
+//    myStringTwo = Console.ReadLine();
+//}
+
+//if (myIntOne > myIntTwo)
+//    Console.WriteLine($"The nubmer {myIntOne} is greater than the number {myIntTwo}");
+//else if (myIntTwo > myIntOne) Console.WriteLine($"The number {myIntTwo} is greater than the  number {myIntOne}");
+//else
+//    Console.WriteLine($"The number {myIntOne} is equal to {myIntTwo}");
+
+
 // Q10: How can you define an enumeration?
 // Q11: How can you concatenate strings?
 // Q12: What is a correct way to define a constant variable?
