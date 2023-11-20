@@ -117,10 +117,33 @@
 //};
 
 
+//// Q11: How can you concatenate strings?
+//string concatenatedString = "My Name is:" + " Ruslan" + " Dubas.";
+//Console.WriteLine(concatenatedString);
 
-// Q11: How can you concatenate strings?
-// Q12: What is a correct way to define a constant variable?
-// Q13: How do you write a switch statement?
+//// Q12: What is a correct way to define a constant variable?
+//const string myName = "RuslanDubas";
+
+//// Q13: How do you write a switch statement?
+//CheckColor("green");
+//void CheckColor(string color)
+//{
+//    switch (color)
+//    {
+//        case "green":
+//            Console.WriteLine("green");
+//            break;
+//        case "black":
+//            Console.WriteLine("black");
+//            break;
+//        case "yellow":
+//            Console.WriteLine("yellow");
+//            break;
+//        default: Console.WriteLine("Enter green, black or yellow only!");
+//            break;
+//    }
+//}
+
 // Q14: How do you declare and use a delegate?
 // Q15: How do you define and call a lambda expression?
 // Q16: How can you instantiate a list of integers?
