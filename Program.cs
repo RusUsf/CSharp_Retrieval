@@ -101,7 +101,23 @@
 //    Console.WriteLine($"The number {myIntOne} is equal to {myIntTwo}");
 
 
-// Q10: How can you define an enumeration?
+//// Q10: How can you define an enumeration?
+//Console.WriteLine($"The {(int)days.Sunday} day of the week is {days.Sunday}");
+//Console.WriteLine($"The {(int)days.Monday} day of the week is {days.Monday}");
+//Console.WriteLine($"The {(int)days.Tuesday} day of the week is {days.Tuesday}");
+//public enum days
+//{
+//    Sunday = 1,
+//    Monday,
+//    Tuesday,
+//    Wednesday,
+//    Thursday,
+//    Friday,
+//    Saturday
+//};
+
+
+
 // Q11: How can you concatenate strings?
 // Q12: What is a correct way to define a constant variable?
 // Q13: How do you write a switch statement?
