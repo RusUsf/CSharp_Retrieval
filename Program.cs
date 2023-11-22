@@ -144,7 +144,13 @@
 //    }
 //}
 
-// Q14: How do you declare and use a delegate?
+//// Q14: How do you declare and use a delegate?
+//MyDelegate myDelegate = ShowMessage;
+//myDelegate("Hello, Delegate");
+
+//void ShowMessage(string  message) { Console.WriteLine(message); }
+//public delegate void MyDelegate(string message);
+
 // Q15: How do you define and call a lambda expression?
 // Q16: How can you instantiate a list of integers?
 // Q17: How do you convert a string to an integer?
