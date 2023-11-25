@@ -148,12 +148,39 @@
 //MyDelegate myDelegate = ShowMessage;
 //myDelegate("Hello, Delegate");
 
-//void ShowMessage(string  message) { Console.WriteLine(message); }
-//public delegate void MyDelegate(string message);
+//MyDelegateAdd myDelegateAdd = AddTwoNumbers;
+//myDelegateAdd(3, 5);
 
-// Q15: How do you define and call a lambda expression?
-// Q16: How can you instantiate a list of integers?
+//void ShowMessage(string message) { Console.WriteLine(message); }
+
+//void AddTwoNumbers(int a, int b)
+//{
+//    Console.WriteLine($" The {a} + {b} = {a + b}");
+//}
+
+//public delegate void MyDelegate(string message);
+//public delegate void MyDelegateAdd(int a, int b);
+
+//// Q15: How do you define and call a lambda expression?
+//Func<int, int, int> add = (x, y) => x + y;
+//int sum = add(3, 4);
+//Console.WriteLine(sum);
+
+//// Q16: How can you instantiate a list of integers?
+//using System.ComponentModel.DataAnnotations;
+
+//List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6 };
+//Console.WriteLine(numbers.Contains(3));
+//Console.WriteLine(numbers[0]);
+//Console.WriteLine(string.Join(" ", numbers));
+//numbers.Add(7);
+//Console.WriteLine(string.Join(" ",numbers));
+//numbers.Remove(7);
+//Console.WriteLine(string.Join(" ",numbers));
+
 // Q17: How do you convert a string to an integer?
+
+
 // Q18: How do you define a structure?
 // Q19: How can you define and start a new thread?
 // Q20: How to define an interface?
