@@ -179,12 +179,23 @@
 //Console.WriteLine(string.Join(" ",numbers));
 
 // Q17: How do you convert a string to an integer?
+//int number = int.Parse("42");
+//Console.WriteLine(number);
 
+//// Q18: How do you define a structure?
+//Point point = new() { X = 5, Y = 6 };
+//Console.WriteLine(point.X);
+//Console.WriteLine(point.Y);
+//public struct Point { public int X; public int Y; }
+//// Q19: How can you define and start a new thread?
+//// Q20: How to define an interface?
+//public interface IAnimal { void Speak(); }
 
-// Q18: How do you define a structure?
-// Q19: How can you define and start a new thread?
-// Q20: How to define an interface?
-// Q21: How to use LINQ to query a collection of integers?
+//// Q21: How to use LINQ to query a collection of integers?
+//var numbers = new List<int> { 1, 2, 3, 4, 5 };
+//var evenNumbers = numbers.Where(n => n % 2 == 0);
+//Console.WriteLine(String.Join(",", evenNumbers));
+
 // Q22: How to asynchronously read a text file?
 // Q23: How to create a property with a private setter?
 // Q24: How to handle different exceptions using multiple catch blocks?
