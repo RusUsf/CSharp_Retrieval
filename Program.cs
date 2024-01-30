@@ -196,8 +196,41 @@
 //var evenNumbers = numbers.Where(n => n % 2 == 0);
 //Console.WriteLine(String.Join(",", evenNumbers));
 
-// Q22: How to asynchronously read a text file?
-// Q23: How to create a property with a private setter?
+//// Q22: How to asynchronously read a text file?
+//using System.Security.Cryptography.X509Certificates;
+
+//using (StreamReader reader = new StreamReader($@"C:\Users\rus_d\OneDrive\Desktop\Coding\Laptop\CSharp\CSharp_Retrieval\CSharpQuestions.txt"))
+//{
+//    string content = await reader.ReadToEndAsync();
+//    Console.WriteLine(content);
+//}
+
+//// Q23: How to create a property with a private setter?
+//MyClass myClass = new MyClass(5);
+//Console.WriteLine(myClass.MyProperty);
+//Console.WriteLine(myClass.Sum(3, 3));
+//StreamReader reader = new StreamReader($@"C:\Users\rus_d\OneDrive\Desktop\Coding\Laptop\CSharp\CSharp_Retrieval\CSharpQuestions.txt");
+//Console.WriteLine(myClass.ReadMyFile(reader));
+//public class MyClass
+//{
+//    public int MyProperty { get; private set; }
+//    public StreamReader MyReader { get; set; }
+//    public MyClass(int myProperty = 3)
+//    {
+//        this.MyProperty = MyProperty;
+//        this.MyReader = MyReader;
+//    }
+
+//    public int Sum(int a, int b) => a + b;
+//    public string ReadMyFile(StreamReader myReader)
+//    {
+//        return myReader.ReadToEnd();
+//    }
+//}
+
+
+
+
 // Q24: How to handle different exceptions using multiple catch blocks?
 // Q25: How to use string interpolation?
 // Q26: How to use the 'using' statement for automatic resource management?
