@@ -1,0 +1,73 @@
+// Print "Hello, World!" to the console
+print "Hello, World!"
+
+// Simple Arithmetic Calculator
+function calculate(operation, number1, number2)
+  if operation == "add"
+    return number1 + number2
+  else if operation == "subtract"
+    return number1 - number2
+  else if operation == "multiply"
+    return number1 * number2
+  else if operation == "divide"
+    return number1 / number2
+  end if
+end function
+
+// Check if a number is even or odd
+function isEven(number)
+  if number % 2 == 0
+    print "Even"
+  else
+    print "Odd"
+  end if
+end function
+
+// Calculate the sum of all numbers in an array
+function sumArray(array)
+  sum = 0
+  for each number in array
+    sum = sum + number
+  end for
+  return sum
+end function
+
+// Find the minimum and maximum number in an array of numbers
+function findMinAndMax(array)
+  min = array[0]
+  max = array[0]
+  for each number in array
+    if number < min
+      min = number
+    end if
+    if number > max
+      max = number
+    end if
+  end for
+  print "Minimum:", min, "Maximum:", max
+end function
+
+// Search for a specific value within an array (Linear Search)
+function linearSearch(array, target)
+  for i from 0 to length(array) - 1
+    if array[i] == target
+      return i
+    end if
+  end for
+  return -1
+end function
+
+// FizzBuzz Challenge
+function fizzBuzz(N)
+  for i from 1 to N
+    if i % 3 == 0 and i % 5 == 0
+      print "FizzBuzz"
+    else if i % 3 == 0
+      print "Fizz"
+    else if i % 5 == 0
+      print "Buzz"
+    else
+      print i
+    end if
+  end for
+end function

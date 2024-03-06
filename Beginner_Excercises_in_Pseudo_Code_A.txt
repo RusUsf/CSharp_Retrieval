@@ -1,0 +1,88 @@
+using System;
+
+class BeginnerExercises
+{
+    // Print "Hello, World!"
+    public static void HelloWorld()
+    {
+        Console.WriteLine("Hello, World!");
+    }
+
+    // Simple Arithmetic Calculator
+    public static double Calculate(string operation, double number1, double number2)
+    {
+        switch (operation)
+        {
+            case "add":
+                return number1 + number2;
+            case "subtract":
+                return number1 - number2;
+            case "multiply":
+                return number1 * number2;
+            case "divide":
+                return number1 / number2;
+            default:
+                throw new ArgumentException("Invalid operation");
+        }
+    }
+
+    // Check if a number is even or odd
+    public static void IsEven(int number)
+    {
+        if (number % 2 == 0)
+            Console.WriteLine("Even");
+        else
+            Console.WriteLine("Odd");
+    }
+
+    // Calculate the sum of all numbers in an array
+    public static int SumArray(int[] array)
+    {
+        int sum = 0;
+        foreach (var number in array)
+        {
+            sum += number;
+        }
+        return sum;
+    }
+
+    // Find the minimum and maximum number in an array
+    public static void FindMinAndMax(int[] array)
+    {
+        int min = array[0];
+        int max = array[0];
+        foreach (var number in array)
+        {
+            if (number < min) min = number;
+            if (number > max) max = number;
+        }
+        Console.WriteLine($"Minimum: {min}, Maximum: {max}");
+    }
+
+    // Linear Search
+    public static int LinearSearch(int[] array, int target)
+    {
+        for (int i = 0; i < array.Length; i++)
+        {
+            if (array[i] == target)
+                return i;
+        }
+        return -1;
+    }
+
+    // FizzBuzz
+    public static void FizzBuzz(int N)
+    {
+        for (int i = 1; i <= N; i++)
+        {
+            if (i % 3 == 0 && i % 5 == 0)
+                Console.WriteLine("FizzBuzz");
+            else if (i % 3 == 0)
+                Console.WriteLine("Fizz");
+            else if (i % 5 == 0)
+                Console.WriteLine("Buzz");
+            else
+                Console.WriteLine(i);
+        }
+    }
+}
