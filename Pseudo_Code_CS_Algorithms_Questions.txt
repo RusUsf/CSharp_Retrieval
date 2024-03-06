@@ -1,0 +1,129 @@
+// Sorting Algorithm (Insertion Sort)
+function sort(array)
+  for i from 1 to length(array)
+    key = array[i]
+    j = i - 1
+    while j >= 0 and array[j] > key
+      array[j + 1] = array[j]
+      j = j - 1
+    end while
+    array[j + 1] = key
+  end for
+end function
+
+// Binary Search
+function binarySearch(array, target)
+  low = 0
+  high = length(array) - 1
+  while low <= high
+    mid = (low + high) / 2
+    if array[mid] == target
+      return mid
+    else if array[mid] < target
+      low = mid + 1
+    else
+      high = mid - 1
+    end if
+  end while
+  return -1
+end function
+
+// Find the Largest Number
+function findLargest(array)
+  largest = array[0]
+  for each item in array
+    if item > largest
+      largest = item
+    end if
+  end for
+  return largest
+end function
+
+// Fibonacci Sequence (Recursive)
+function fibonacci(n)
+  if n <= 1
+    return n
+  end if
+  return fibonacci(n-1) + fibonacci(n-2)
+end function
+
+// Graph Traversal (Breadth-First Search)
+function BFS(graph, startNode)
+  queue = empty queue
+  queue.enqueue(startNode)
+  visited = set(startNode)
+  while queue is not empty
+    currentNode = queue.dequeue()
+    print(currentNode)
+    for each neighbor of currentNode
+      if neighbor is not visited
+        queue.enqueue(neighbor)
+        visited.add(neighbor)
+      end if
+    end for
+  end while
+end function
+
+// Hash Table Insertion and Lookup
+function insert(table, key, value)
+  index = hashFunction(key)
+  table[index] = value
+end function
+
+function lookup(table, key)
+  index = hashFunction(key)
+  return table[index]
+end function
+
+// Merge Sort
+function mergeSort(array)
+  if length(array) > 1
+    mid = length(array) / 2
+    leftHalf = array[0...mid]
+    rightHalf = array[mid...end]
+    
+    mergeSort(leftHalf)
+    mergeSort(rightHalf)
+    
+    merge(array, leftHalf, rightHalf)
+  end if
+end function
+
+// Depth-First Search (DFS) for Graphs
+function DFS(graph, startNode)
+  stack = empty stack
+  stack.push(startNode)
+  visited = set(startNode)
+  while stack is not empty
+    currentNode = stack.pop()
+    print(currentNode)
+    for each neighbor of currentNode
+      if neighbor is not visited
+        stack.push(neighbor)
+        visited.add(neighbor)
+      end if
+    end for
+  end while
+end function
+
+// Dynamic Programming: Fibonacci Sequence
+function fibonacci(n)
+  memo = array of size n
+  if n <= 1
+    return n
+  else if memo[n] is not empty
+    return memo[n]
+  else
+    memo[n] = fibonacci(n-1) + fibonacci(n-2)
+    return memo[n]
+  end if
+end function
+
+// Quick Sort
+function quickSort(array, low, high)
+  if low < high
+    pi = partition(array, low, high)
+    quickSort(array, low, pi - 1)
+    quickSort(array, pi + 1, high)
+  end if
+end function
