@@ -1,4 +1,7 @@
-﻿//// Q1: How to write a "Hello, World!" program?
+﻿Console.WriteLine("Hello World, I am learning C Sharp programming!");
+
+
+//// Q1: How to write a "Hello, World!" program?
 //Console.WriteLine("Hello, world!");
 //Console.WriteLine("I am capable of learning C# programming language. I am smart, intelligent, and hardworking. I have the ability to learn new things, including C#");
 
@@ -232,6 +235,8 @@
 
 
 // Q24: How to handle different exceptions using multiple catch blocks?
+
+
 // Q25: How to use string interpolation?
 // Q26: How to use the 'using' statement for automatic resource management?
 // Q27: How to use extension methods?
