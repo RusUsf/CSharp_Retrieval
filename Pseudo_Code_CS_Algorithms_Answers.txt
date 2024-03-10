@@ -83,3 +83,43 @@ class AdvancedCSChallenges
         }
     }
 }
+
+// BARD Answers
+// Big O Challenge Examples
+
+// Challenge 1: Finding Maximum Value
+
+// Input: An array of integers
+// Output: The maximum value in the array
+
+function findMax(array):
+  currentMax = array[0]  // Initialize currentMax to the first element
+  for i = 1 to array.length - 1:  // Iterate through the array
+    if array[i] > currentMax:
+      currentMax = array[i]  // Update currentMax if a larger value is found
+  return currentMax
+
+// Challenge 2: Finding Duplicates
+
+// Input: An array of integers
+// Output: A list of duplicate elements in the array
+
+function findDuplicates(array):
+  duplicates = []  // Create an empty list to store duplicates
+  for i = 0 to array.length - 1:
+    for j = i + 1 to array.length - 1:
+      if array[i] == array[j]:
+        duplicates.append(array[i])  // Add the duplicate to the list
+  return duplicates
+
+// Challenge 3: Sorting an Array
+
+// Input: An array of integers
+// Output: The sorted array
+
+function bubbleSort(array):
+  for i = 0 to array.length - 2:
+    for j = 0 to array.length - i - 2:
+      if array[j] > array[j + 1]:
+        swap(array[j], array[j + 1])  // Swap elements if they are in the wrong order
+  return array
