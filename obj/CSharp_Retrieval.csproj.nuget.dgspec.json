@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Desktop\\Coding\\CSharp\\CSharp_Retrieval\\CSharp_Retrieval.csproj": {}
+    "C:\\Users\\Lenovo\\Desktop\\Coding\\CSharp_and_SQL\\More_Apps\\CSharp_Retrieval\\CSharp_Retrieval.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Desktop\\Coding\\CSharp\\CSharp_Retrieval\\CSharp_Retrieval.csproj": {
+    "C:\\Users\\Lenovo\\Desktop\\Coding\\CSharp_and_SQL\\More_Apps\\CSharp_Retrieval\\CSharp_Retrieval.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Coding\\CSharp\\CSharp_Retrieval\\CSharp_Retrieval.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Coding\\CSharp_and_SQL\\More_Apps\\CSharp_Retrieval\\CSharp_Retrieval.csproj",
         "projectName": "CSharp_Retrieval",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Coding\\CSharp\\CSharp_Retrieval\\CSharp_Retrieval.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Coding\\CSharp_and_SQL\\More_Apps\\CSharp_Retrieval\\CSharp_Retrieval.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Coding\\CSharp\\CSharp_Retrieval\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Coding\\CSharp_and_SQL\\More_Apps\\CSharp_Retrieval\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

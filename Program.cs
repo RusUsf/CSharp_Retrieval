@@ -235,7 +235,18 @@
 
 
 // Q24: How to handle different exceptions using multiple catch blocks?
+//try
+//{
 
+//}
+//catch(FileNotFoundException)
+//{
+
+//}
+//catch( Exception e)
+//{
+//    Console.WriteLine("General exception!");
+//}
 
 // Q25: How to use string interpolation?
 // Q26: How to use the 'using' statement for automatic resource management?
