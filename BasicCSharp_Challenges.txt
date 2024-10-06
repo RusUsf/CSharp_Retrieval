@@ -1,0 +1,119 @@
+void Main()
+{
+    // Challenge 1: FizzBuzz
+    Console.WriteLine("Challenge 1: FizzBuzz");
+    FizzBuzz();
+
+    // Challenge 2: Reverse a String
+    Console.WriteLine("\nChallenge 2: Reverse a String");
+    string input = "Hello, World!";
+    string reversed = ReverseString(input);
+    Console.WriteLine($"Original: {input}");
+    Console.WriteLine($"Reversed: {reversed}");
+
+    // Challenge 3: Check for Palindrome
+    Console.WriteLine("\nChallenge 3: Check for Palindrome");
+    string palindromeInput = "A man a plan a canal Panama";
+    bool isPalindrome = IsPalindrome(palindromeInput);
+    Console.WriteLine($"Is '{palindromeInput}' a palindrome? {isPalindrome}");
+
+    // Challenge 4: Sum of Array Elements
+    Console.WriteLine("\nChallenge 4: Sum of Array Elements");
+    int[] numbers = { 1, 2, 3, 4, 5 };
+    int sum = SumArray(numbers);
+    Console.WriteLine($"Sum of array elements: {sum}");
+
+    // Challenge 5: Find the Maximum Number in an Array
+    Console.WriteLine("\nChallenge 5: Find the Maximum Number in an Array");
+    int[] maxNumbers = { 1, 3, 5, 7, 2, 4, 6, 8 };
+    int max = FindMax(maxNumbers);
+    Console.WriteLine($"Maximum number in array: {max}");
+
+    // Challenge 6: Factorial of a Number
+    Console.WriteLine("\nChallenge 6: Factorial of a Number");
+    int number = 5;
+    int factorialResult = Factorial(number);
+    Console.WriteLine($"Factorial of {number}: {factorialResult}");
+
+    // Challenge 7: Fibonacci Sequence
+    Console.WriteLine("\nChallenge 7: Fibonacci Sequence");
+    int n = 10;
+    List<int> fibonacci = Fibonacci(n);
+    Console.WriteLine($"First {n} numbers in Fibonacci sequence: {string.Join(", ", fibonacci)}");
+}
+
+// Challenge 1: FizzBuzz
+void FizzBuzz()
+{
+    for (int i = 1; i <= 100; i++)
+    {
+        if (i % 3 == 0 && i % 5 == 0)
+            Console.WriteLine("FizzBuzz");
+        else if (i % 3 == 0)
+            Console.WriteLine("Fizz");
+        else if (i % 5 == 0)
+            Console.WriteLine("Buzz");
+        else
+            Console.WriteLine(i);
+    }
+}
+
+// Challenge 2: Reverse a String
+string ReverseString(string s)
+{
+    char[] charArray = s.ToCharArray();
+    Array.Reverse(charArray);
+    return new string(charArray);
+}
+
+// Challenge 3: Check for Palindrome
+bool IsPalindrome(string s)
+{
+    string cleaned = new string(s.ToLower().Where(char.IsLetterOrDigit).ToArray());
+    string reversed = new string(cleaned.Reverse().ToArray());
+    return cleaned == reversed;
+}
+
+// Challenge 4: Sum of Array Elements
+int SumArray(int[] arr)
+{
+    int sum = 0;
+    foreach (int num in arr)
+    {
+        sum += num;
+    }
+    return sum;
+}
+
+// Challenge 5: Find the Maximum Number in an Array
+int FindMax(int[] arr)
+{
+    int max = arr[0];
+    foreach (int num in arr)
+    {
+        if (num > max)
+        {
+            max = num;
+        }
+    }
+    return max;
+}
+
+// Challenge 6: Factorial of a Number
+int Factorial(int n)
+{
+    if (n == 0)
+        return 1;
+    return n * Factorial(n - 1);
+}
+
+// Challenge 7: Fibonacci Sequence
+List<int> Fibonacci(int n)
+{
+    List<int> sequence = new List<int> { 0, 1 };
+    for (int i = 2; i < n; i++)
+    {
+        sequence.Add(sequence[i - 1] + sequence[i - 2]);
+    }
+    return sequence;
+}
